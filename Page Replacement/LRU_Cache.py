@@ -4,7 +4,7 @@ class Node:
         self.next=None
         self.prev=None
         
-class LRU_Cache:
+class LRUCache:
     def __init__(self,capacity):
         self.capacity=capacity
         self.size=0
@@ -59,7 +59,7 @@ class LRU_Cache:
         print()
 
 if __name__=='__main__':
-    lru = LRU_Cache(capacity=2)
+    lru=LRUCache(capacity=2)
     lru.put(2, 1)
     print('Cache now is: ')
     lru.display()
