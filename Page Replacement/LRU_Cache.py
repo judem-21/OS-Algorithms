@@ -3,7 +3,8 @@ class Node:
         self.data=data
         self.next=None
         self.prev=None
-class LRU:
+        
+class LRU_Cache:
     def __init__(self,capacity):
         self.capacity=capacity
         self.size=0
@@ -58,16 +59,16 @@ class LRU:
         print()
 
 if __name__=='__main__':
-    lru_cache = LRU(capacity=2)
-    lru_cache.put(2, 1)
+    lru = LRU_Cache(capacity=2)
+    lru.put(2, 1)
     print('Cache now is: ')
-    lru_cache.display()
-    lru_cache.put(1, 1)
+    lru.display()
+    lru.put(1, 1)
     print('Cache now is: ')
-    lru_cache.display()
-    lru_cache.put(2, 3)
+    lru.display()
+    lru.put(2, 3)
     print('Cache now is: ')
-    lru_cache.display()
+    lru.display()
 
 
 
